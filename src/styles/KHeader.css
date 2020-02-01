@@ -1,0 +1,29 @@
+.heder__title {
+  position: absolute;
+  width: 331px;
+  height: 26px;
+  left: 6px;
+  top: 6px;
+  font-family: 'Roboto';
+  font-size: 28px;
+  line-height: 33px;
+  color: #ffffff;
+  text-align: left;
+  margin: 0 auto;
+  display: flex;
+  padding: 10px 18px 10px;
+}
+.heder__avatar {
+  width: 26px;
+  height: 33px;
+  left: 1100px;
+  position: relative;
+  display: flex;
+  margin-top: 10px;
+}
+.heder__arrow {
+  position: relative;
+  left: 1130px;
+  display: flex;
+  bottom: 25px;
+}
