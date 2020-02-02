@@ -5,10 +5,12 @@ import arrow from '../images/arrow-down.svg'
 
 function KHeader() {
   return (
-    <div className='heder'>
-      <h1 className='heder__title'>Awesome Kanban Board</h1>
-      <img src={avatar} className='heder__avatar' />
-      <img src={arrow} className='heder__arrow' />
+    <div className='header'>
+      <h1 className='header__title'>Awesome Kanban Board</h1>
+      <img src={avatar} className='header__avatar' />
+      <button className='header__button'>
+        <img src={arrow} className='header__arrow' />
+      </button>
     </div>
   )
 }

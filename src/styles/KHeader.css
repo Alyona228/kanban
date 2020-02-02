@@ -1,4 +1,4 @@
-.heder__title {
+.header__title {
   position: absolute;
   width: 331px;
   height: 26px;
@@ -13,7 +13,7 @@
   display: flex;
   padding: 10px 18px 10px;
 }
-.heder__avatar {
+.header__avatar {
   width: 26px;
   height: 33px;
   left: 1100px;
@@ -21,9 +21,18 @@
   display: flex;
   margin-top: 10px;
 }
-.heder__arrow {
+.header__arrow {
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+.header__arrow:hover {
+  transform: rotate(180deg);
+}
+.header__button {
   position: relative;
   left: 1130px;
   display: flex;
   bottom: 25px;
+  background: none;
+  border: none;
 }
