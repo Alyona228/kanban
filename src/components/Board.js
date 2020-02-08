@@ -4,8 +4,8 @@ import menuButton from '../images/1.svg'
 
 function Board(params) {
   return (
-    <div className='body'>
-      <div classname='backlog'>
+    <div className='board'>
+      <div className='backlog'>
         Backlog
         <img src={menuButton} className='img' />
       </div>
