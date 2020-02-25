@@ -1,3 +1,4 @@
 .body__boards {
   display: flex;
+  height: 645px;
 }

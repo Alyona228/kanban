@@ -6,10 +6,10 @@ import Board from './Board.js'
 function Main(params) {
   return (
     <div className='body__boards'>
-      <Board />
-      <Board />
-      <Board />
-      <Board />
+      <Board name='backlog' />
+      <Board name='Ready' />
+      <Board name='In Progress' />
+      <Board name='Finished' />
     </div>
   )
 }

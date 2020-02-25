@@ -2,4 +2,8 @@
   text-align: center;
   background-color: #0079bf;
   display: flex;
+  flex-direction: column;
+  width: 1235px;
+  margin: auto;
+  position: relative;
 }

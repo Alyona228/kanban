@@ -3,10 +3,11 @@ import '../styles/Board.css'
 import menuButton from '../images/1.svg'
 
 function Board(params) {
+  console.log(params)
   return (
     <div className='board'>
       <div className='backlog'>
-        Backlog
+        {params.name}
         <img src={menuButton} className='img' />
       </div>
       <div className='body__select'>
@@ -15,7 +16,9 @@ function Board(params) {
       <div className='body__select'>
         <p>Sprint bugfix</p>
       </div>
-      <button className='body__button'>+Add card</button>
+      <button onClick={() => console.log('azaza')} className='body__button'>
+        +Add card
+      </button>
     </div>
   )
 }

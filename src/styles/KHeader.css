@@ -36,3 +36,11 @@
   background: none;
   border: none;
 }
+.header {
+  background: #0067a3;
+  position: absolute;
+  width: 1235px;
+  height: 55px;
+  left: 0px;
+  top: 0px;
+}
