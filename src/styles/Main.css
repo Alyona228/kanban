@@ -1,4 +1,4 @@
 .body__boards {
   display: flex;
-  height: 645px;
+  max-height: 645px;
 }

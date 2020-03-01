@@ -2,7 +2,9 @@
   display: flex;
   position: relative;
   width: 292px;
-  height: 197px;
+  height: 100%;
+  min-height: 197px;
+  max-height: 645px;
   background: #ebecf0;
   border-radius: 10px;
   margin-top: 68px;
@@ -44,4 +46,24 @@
   border: none;
   width: 102px;
   height: 29px;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.buttons__button {
+  width: 125px;
+  height: 21px;
+  left: 32px;
+  top: 168px;
+  border: none;
+}
+.buttons__button--add:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+}
+.buttons__button:disabled {
+  cursor: default;
+  background-color: buttonface;
 }

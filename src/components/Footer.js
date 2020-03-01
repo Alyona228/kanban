@@ -1,10 +1,10 @@
 import React from 'react'
-import '../styles/Footor.css'
+import '../styles/Footer.css'
 
-function Footor(params) {
+function Footer(params) {
   console.log(params)
   return (
-    <div className='footor'>
+    <div className='footer'>
       <div>Active tasks:</div>
       <div>Finished tasks:</div>
       <div>Kanban board by </div>
@@ -12,4 +12,4 @@ function Footor(params) {
   )
 }
 
-export default Footor
+export default Footer
