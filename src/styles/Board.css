@@ -10,6 +10,7 @@
   border-radius: 10px;
   flex-direction: column;
   text-align: left;
+  padding: 8px 10px 10px 0px;
 }
 
 .backlog {
@@ -20,6 +21,8 @@
   flex-direction: row;
   text-align: left;
   padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .body__select {
@@ -72,4 +75,6 @@
 .buttons__button--add {
   text-align: left;
   padding-left: 2px;
+  color: #5e6c84;
+  font-size: 18px;
 }
