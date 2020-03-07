@@ -1,14 +1,13 @@
 .board {
   display: flex;
   position: relative;
+  margin: 65px 5px 5px 5px;
   width: 292px;
   height: 100%;
   min-height: 197px;
   max-height: 645px;
   background: #ebecf0;
   border-radius: 10px;
-  margin-top: 68px;
-  margin-left: 15px;
   flex-direction: column;
   text-align: left;
 }
@@ -20,6 +19,7 @@
   position: relative;
   flex-direction: row;
   text-align: left;
+  padding-left: 20px;
 }
 
 .body__select {
@@ -50,12 +50,14 @@
 .buttons {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
+  margin-left: -90px;
 }
 .buttons__button {
-  width: 125px;
-  height: 21px;
-  left: 32px;
+  width: 102px;
+  height: 29px;
+
+  padding-left: -70px;
   top: 168px;
   border: none;
 }
@@ -66,4 +68,8 @@
 .buttons__button:disabled {
   cursor: default;
   background-color: buttonface;
+}
+.buttons__button--add {
+  text-align: left;
+  padding-left: 2px;
 }
