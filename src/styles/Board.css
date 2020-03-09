@@ -1,8 +1,11 @@
-.board {
+.body__boards {
   display: flex;
   position: relative;
-  margin: 65px 5px 5px 5px;
-  width: 292px;
+  margin: 65px 5px;
+  justify-content: space-between;
+}
+.board {
+  width: 282px;
   height: 100%;
   min-height: 197px;
   max-height: 645px;
