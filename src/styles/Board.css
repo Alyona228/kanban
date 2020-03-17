@@ -1,31 +1,26 @@
-.body__boards {
-  display: flex;
-  position: relative;
-  margin: 65px 5px;
-  justify-content: space-between;
-}
 .board {
   width: 282px;
   height: 100%;
   min-height: 197px;
-  max-height: 645px;
   background: #ebecf0;
   border-radius: 10px;
   flex-direction: column;
   text-align: left;
-  padding: 8px 10px 10px 0px;
+  padding: 12px 10px 10px 12px;
+  box-sizing: border-box;
+  max-height: calc(100% - 20px);
 }
 
 .backlog {
-  width: 232px;
   height: 17px;
   display: flex;
   position: relative;
   flex-direction: row;
   text-align: left;
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 0;
+  max-height: 645px;
+  font-size: 18px;
+  margin-bottom: 15px;
 }
 
 .body__select {
@@ -53,23 +48,17 @@
   width: 102px;
   height: 29px;
 }
-.buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-left: -90px;
-}
 .buttons__button {
   width: 102px;
   height: 29px;
-
-  padding-left: -70px;
+  font-family: 'Roboto', sans-serif;
   top: 168px;
   border: none;
 }
 .buttons__button--add:hover {
   cursor: pointer;
   background-color: #ffffff;
+  border-radius: 3px;
 }
 .buttons__button:disabled {
   cursor: default;
@@ -80,4 +69,5 @@
   padding-left: 2px;
   color: #5e6c84;
   font-size: 18px;
+  line-height: 21px;
 }

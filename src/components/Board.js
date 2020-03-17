@@ -3,6 +3,7 @@ import '../styles/Board.css'
 import menuButton from '../images/1.svg'
 import Item from './Item'
 import '../styles/Item.css'
+import CreateItem from './CreateItem'
 
 export default class Board extends React.Component {
   constructor() {
@@ -68,8 +69,8 @@ export default class Board extends React.Component {
           ''
         ) : (
           <select>
-            {this.props.itemsToAdd().map(item => (
-              <option>{item}</option>
+            {this.props.itemsToAdd().map((item, index) => (
+              <option key={index}>{item}</option>
             ))}
           </select>
         )
@@ -79,21 +80,18 @@ export default class Board extends React.Component {
       <div className='board'>
         <div className='backlog'>
           {this.props.name}
-          <img src={menuButton} className='img' />
+          <img src={menuButton} alt='это аватар' className='img' />
         </div>
         <ul className='list'>
           {items}
           {addItemElement}
-          <div className='buttons'>
-            <button
-              // disabled
-              className='buttons__button buttons__button--add'
-              onClick={this.addItemAnyword.bind(this)}
-            >
-              +Add card
-            </button>
-            <button onClick={this.removeItemAnyword.bind(this)}>Delete</button>
-          </div>
+          <CreateItem />
+          <button
+            className='buttons__button buttons__button--add'
+            onClick={this.addItemAnyword.bind(this)}
+          >
+            +Add card
+          </button>
         </ul>
       </div>
     )

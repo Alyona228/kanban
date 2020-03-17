@@ -1,6 +1,5 @@
 import React from 'react'
 import '../styles/Main.css'
-
 import Board from './Board.js'
 
 export default class Main extends React.Component {
@@ -11,19 +10,19 @@ export default class Main extends React.Component {
       boards: [
         {
           name: 'Backlog',
-          items: ['first', 'second', 'third'],
+          items: ['Login page - performance issues', '', ''],
         },
         {
           name: 'Ready',
-          items: ['first', 'second', 'third', 'fourth'],
+          items: ['', '', '', ''],
         },
         {
           name: 'In Progress',
-          items: ['first', 'second', 'third'],
+          items: ['', '', ''],
         },
         {
           name: 'Finished',
-          items: ['first', 'second', 'third'],
+          items: ['', '', ''],
         },
       ],
     }
@@ -63,6 +62,7 @@ export default class Main extends React.Component {
           items={board.items}
           addItem={this.addNewItem.bind(this, index)}
           removeItem={this.removeItem.bind(this, index)}
+          key={index}
         ></Board>
       )
     })

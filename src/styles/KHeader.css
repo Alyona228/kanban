@@ -1,27 +1,33 @@
+.header {
+  background: #0067a3;
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 11px 0 11px 20px;
+}
 .header__title {
-  position: absolute;
   width: 331px;
   height: 26px;
   left: 6px;
   top: 6px;
   font-family: 'Roboto';
+  font-weight: 400;
   font-size: 28px;
   line-height: 33px;
   color: #ffffff;
   text-align: left;
   margin: 0 auto;
   display: flex;
-  padding: 4px 18px 8px;
 }
 .header__avatar {
   width: 26px;
   height: 33px;
-  left: 1100px;
-  position: relative;
-  display: flex;
   margin-top: 10px;
+  margin-left: auto;
 }
 .header__arrow {
+  margin-right: 20px;
   transition: transform 0.2s ease-in-out;
   cursor: pointer;
 }
@@ -30,17 +36,7 @@
 }
 .header__button {
   position: relative;
-  left: 1130px;
-  display: flex;
-  bottom: 25px;
   background: none;
   border: none;
-}
-.header {
-  background: #0067a3;
-  position: absolute;
-  width: 1235px;
-  height: 55px;
-  left: 0px;
-  top: 0px;
+  margin: 15px 10px 50px 30px;
 }
