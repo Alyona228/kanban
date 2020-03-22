@@ -15,7 +15,7 @@ export default class Board extends React.Component {
   addItemAnyword() {
     if (this.state.newItem === null) {
       this.setState({
-        newItem: '',
+        newItem: 'text',
       })
     }
   }
@@ -83,9 +83,9 @@ export default class Board extends React.Component {
           <img src={menuButton} alt='это аватар' className='img' />
         </div>
         <ul className='list'>
-          {items}
-          {addItemElement}
-          <CreateItem />
+          <CreateItem></CreateItem>
+          {this.props.addItemElement}
+
           <button
             className='buttons__button buttons__button--add'
             onClick={this.addItemAnyword.bind(this)}

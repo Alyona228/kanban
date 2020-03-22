@@ -2,7 +2,6 @@ import React from 'react'
 import '../styles/Footer.css'
 
 function Footer(params) {
-  console.log(params)
   return (
     <div className='footer'>
       <div className='footer__left'>Active tasks: &#8249;N&#8250; </div>
