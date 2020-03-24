@@ -75,17 +75,14 @@ export default class Board extends React.Component {
           </select>
         )
     }
-
     return (
       <div className='board'>
         <div className='backlog'>
           {this.props.name}
           <img src={menuButton} alt='это аватар' className='img' />
         </div>
+        <CreateItem> {this.props.addItemElement} </CreateItem>
         <ul className='list'>
-          <CreateItem></CreateItem>
-          {this.props.addItemElement}
-
           <button
             className='buttons__button buttons__button--add'
             onClick={this.addItemAnyword.bind(this)}
