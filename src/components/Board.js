@@ -18,10 +18,9 @@ export default class Board extends React.Component {
       showInput: true,
     })
   }
-  handleBlur =()=>{
-    this.setState({
-      flag:
-    })
+  handleEnter = e => {
+    if (e.nativeEvent.code === 'Enter')
+      this.props.handleAddTask(e.nativeEvent.target.value)
   }
 
   render() {
@@ -29,7 +28,7 @@ export default class Board extends React.Component {
       <div className='board'>
         <div className='board-title'>{this.props.title}</div>
         {this.state.showInput ? (
-          <input className='new-task-input' onBlur={this.handleBlur}/>
+          <input className='new-task-input' onKeyDown={this.handleEnter} />
         ) : (
           undefined
         )}

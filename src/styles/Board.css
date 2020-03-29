@@ -69,7 +69,13 @@
   line-height: 21px;
 }
 .new-task-input {
-  width: 150px;
-  height: 50px;
-  background-color: green;
+  width: 258px;
+  height: 57px;
+  left: 12px;
+  top: 44px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+.list {
+  list-style: none;
 }

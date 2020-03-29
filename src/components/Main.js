@@ -6,10 +6,18 @@ export default class Main extends React.Component {
   constructor() {
     super()
     this.state = {
-      tasks: [''],
+      tasks: [],
     }
   }
-  handleAddTask = () => {}
+
+  handleAddTask = task => {
+    const tasks = this.state.tasks
+    tasks.push(task)
+    this.setState({
+      tasks: tasks,
+    })
+  }
+
   render() {
     return (
       <div className='body__boards'>
@@ -17,8 +25,9 @@ export default class Main extends React.Component {
           title='Backlog'
           tasks={this.state.tasks}
           handleAddTask={this.handleAddTask}
+          fn={this.addItem}
         />
-        {/* <Board
+        <Board
           title='Ready'
           tasks={this.state.tasks}
           handleAddTask={this.handleAddTask}
@@ -31,7 +40,7 @@ export default class Main extends React.Component {
         <Board
           title='Finished'
           tasks={this.state.tasks}
-          handleAddTask={this.handleAddTask} */}
+          handleAddTask={this.handleAddTask}
         />
       </div>
     )
